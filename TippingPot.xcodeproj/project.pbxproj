@@ -12,6 +12,7 @@
 		49D3F1A719AAE32000AACCF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49D3F1A519AAE32000AACCF5 /* Main.storyboard */; };
 		49D3F1A919AAE32000AACCF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49D3F1A819AAE32000AACCF5 /* Images.xcassets */; };
 		49D3F1B519AAE32000AACCF5 /* TippingPotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D3F1B419AAE32000AACCF5 /* TippingPotTests.swift */; };
+		49D3F1BF19AAF13C00AACCF5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D3F1BE19AAF13C00AACCF5 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +35,7 @@
 		49D3F1AE19AAE32000AACCF5 /* TippingPotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TippingPotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49D3F1B319AAE32000AACCF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49D3F1B419AAE32000AACCF5 /* TippingPotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TippingPotTests.swift; sourceTree = "<group>"; };
+		49D3F1BE19AAF13C00AACCF5 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		49D3F19E19AAE32000AACCF5 /* TippingPot */ = {
 			isa = PBXGroup;
 			children = (
+				49D3F1C019AAF18800AACCF5 /* View Controllers */,
 				49D3F1A119AAE32000AACCF5 /* AppDelegate.swift */,
 				49D3F1A319AAE32000AACCF5 /* ViewController.swift */,
 				49D3F1A519AAE32000AACCF5 /* Main.storyboard */,
@@ -107,6 +110,14 @@
 				49D3F1B319AAE32000AACCF5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49D3F1C019AAF18800AACCF5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49D3F1BE19AAF13C00AACCF5 /* SettingsViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +221,7 @@
 			files = (
 				49D3F1A419AAE32000AACCF5 /* ViewController.swift in Sources */,
 				49D3F1A219AAE32000AACCF5 /* AppDelegate.swift in Sources */,
+				49D3F1BF19AAF13C00AACCF5 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

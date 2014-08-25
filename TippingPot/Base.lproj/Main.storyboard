@@ -179,7 +179,7 @@
                                 <rect key="frame" x="172" y="228" width="93" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <connections>
                                     <action selector="onEditTax:" destination="QHq-BA-cxz" eventType="editingChanged" id="9e9-In-PQL"/>
                                     <action selector="onEditTip:" destination="QHq-BA-cxz" eventType="editingChanged" id="Nqw-lh-eev"/>

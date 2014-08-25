@@ -12,11 +12,12 @@ class SettingsViewController: UIViewController {
 
     @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var editTipField: UITextField!
+    @IBOutlet weak var taxField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        loadDefaultTipValues()
+        loadDefaultValues()
         loadEditTipField()
     }
 
@@ -46,6 +47,12 @@ class SettingsViewController: UIViewController {
         }
     }
 
+    @IBAction func onEditTax(sender: AnyObject) {
+        var defaults = NSUserDefaults.standardUserDefaults()
+        var tax = taxField.text._bridgeToObjectiveC().doubleValue
+        defaults.setDouble(tax, forKey: "DEFAULT_TAX")
+    }
+    
     @IBAction func onTipSelected(sender: AnyObject) {
         loadEditTipField()
     }
@@ -57,13 +64,17 @@ class SettingsViewController: UIViewController {
     }
     
     // TODO(Andrew) this should really be a public static method
-    func loadDefaultTipValues() {
+    func loadDefaultValues() {
         var defaults = NSUserDefaults.standardUserDefaults()
         var tipValues = Array(Zip2([0,1,2], ViewController.TipOptions.allValues))
         for (index, tipKey) in tipValues {
             var tipValue = defaults.stringForKey(tipKey.toRaw())
             tipControl.setTitle("\(tipValue!)%", forSegmentAtIndex: index)
         }
+        
+        //TODO(Andrew): figure out how to reference a public variable
+        var tax = defaults.doubleForKey("DEFAULT_TAX")
+        taxField.text = "\(tax)"
     }
 
     @IBAction func onTap(sender: AnyObject) {

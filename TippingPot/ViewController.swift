@@ -15,7 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var totalLabel: UILabel!
     @IBOutlet weak var taxLabel: UILabel!
     @IBOutlet weak var taxValueLabel: UILabel!
-    
+
     enum TipOptions : String {
         case FrugalTip = "frugal", RegularTip = "regular", GenerousTip = "generous"
         
@@ -36,8 +36,11 @@ class ViewController: UIViewController {
             initializeDefaultValues()
         }
 
+        //focus the input
+        billField.becomeFirstResponder()
+
     }
-    
+
     override func viewWillAppear(animated: Bool) {
         loadDefaultValues()
         calculateTotal()

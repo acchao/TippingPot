@@ -13,6 +13,7 @@ class SettingsViewController: UIViewController {
     @IBOutlet weak var tipControl: UISegmentedControl!
     @IBOutlet weak var editTipField: UITextField!
     @IBOutlet weak var taxField: UITextField!
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
